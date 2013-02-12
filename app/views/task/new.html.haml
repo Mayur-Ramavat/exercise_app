@@ -1,0 +1,10 @@
+%h1 Sign up
+
+.row
+  .span6.offset3
+    = form_for(@task) do |f| 
+
+      = f.label :task
+      = f.text_field :task
+
+      = f.submit "Create new Task", class: "btn btn-large btn-primary"
