@@ -1,6 +1,15 @@
 %h1 All Tasks
 
 =will_paginate @tasks
-%ul.tasks
+%table
+  %tr
+    %th
+      Id
+    %th
+      Task
+    %th
+      Edit
+    %th
+      Delete
   = render @tasks
 =will_paginate @tasks

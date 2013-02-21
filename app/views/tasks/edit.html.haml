@@ -1,0 +1,13 @@
+%h1 Update Task
+
+.row
+  .span6.offset3
+    = form_for(@task) do |f| 
+
+      = f.label :task
+      = f.text_field :task
+
+      = f.submit "Save Changes", class: "btn btn-large btn-primary"
+.row
+  .btn
+    = link_to 'delete task', @task, method: :delete, data: { confirm: "You sure?" }
