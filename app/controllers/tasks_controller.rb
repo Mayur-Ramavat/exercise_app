@@ -43,7 +43,7 @@ class TasksController < ApplicationController
 
   def destroy
     Task.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
+    flash[:success] = "Task deleted."
     redirect_to tasks_url
   end
 
